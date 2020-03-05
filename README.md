@@ -32,3 +32,8 @@ This is a repo with the basics for Python
 - Append
 - Add
 - Printing keys
+- Strings
+- Integers
+- Booleans
+
+
