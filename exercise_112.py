@@ -27,4 +27,4 @@ while user_input != 'pineapple':
         # handle exiting game
         print("Thank you for playing.")
     else:
-        print("Please enter a valid input")
+        print("Please enter a valid input")#
