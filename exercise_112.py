@@ -1,3 +1,5 @@
+from fizzbuzz_function import *
+
 # get user input
 user_input = ''
 while user_input != 'pineapple':
@@ -8,16 +10,17 @@ while user_input != 'pineapple':
         # play the game
         user_input = int(user_input)
         print(type(user_input))
+
         # print all numbers from 1 to input_number
         for number in range(1, user_input + 1):
-            if (number % 3 == 0) and (number % 5 == 0):
-                print("bizzzzuu")
+            if is_div_by(number, 3) and is_div_by(number, 5):
+                print("FizzBuzz")
             # if it is a multiple of 3 it returns bizz
-            elif number % 3 == 0:
-                print("bizz")
+            elif is_div_by(number, 3):
+                print("FIZZ")
             # if a multiple of 5 it return zzuu
-            elif number % 5 == 0:
-                print("zzuu")
+            elif is_div_by(number, 5):
+                print("BUZZ")
             # if a multiple of 3 and 5 it return bizzzzuu
             else:
                 print(number)
@@ -28,3 +31,4 @@ while user_input != 'pineapple':
         print("Thank you for playing.")
     else:
         print("Please enter a valid input")#
+
