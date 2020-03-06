@@ -13,17 +13,7 @@ while user_input != 'pineapple':
 
         # print all numbers from 1 to input_number
         for number in range(1, user_input + 1):
-            if is_div_by(number, 3) and is_div_by(number, 5):
-                print("FizzBuzz")
-            # if it is a multiple of 3 it returns bizz
-            elif is_div_by(number, 3):
-                print("FIZZ")
-            # if a multiple of 5 it return zzuu
-            elif is_div_by(number, 5):
-                print("BUZZ")
-            # if a multiple of 3 and 5 it return bizzzzuu
-            else:
-                print(number)
+            print(play_fizzbuzz(number))
     # else (input is not a number)
         # invalid input - give feedback
     elif user_input == 'pineapple':
